@@ -23,6 +23,6 @@ The classes for background colors are:.bg-primary, .bg-success, bg-info, bg-warn
 More Typography Classes
 at the link below
 
-http://www.w3schools.com/bootstrap/bootstrap_typography.asp
+http://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp
 
 -----------------------------------------------------------
