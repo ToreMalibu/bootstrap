@@ -39,3 +39,7 @@ div class="embed-responsive embed-responsive-4by3"
 
 Available Glyphs
 http://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp
+
+-----------------------------------------------------------
+
+bs-18.html Collapse, accordion etc page - need to separate containers into their own pages because they are colliding with each other
