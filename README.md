@@ -34,3 +34,8 @@ div class="embed-responsive embed-responsive-16by9
 
 #<!-- 4:3 aspect ratio -->
 div class="embed-responsive embed-responsive-4by3"
+
+-----------------------------------------------------------
+
+Available Glyphs
+http://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp
