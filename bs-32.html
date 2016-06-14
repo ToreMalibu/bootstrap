@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Hair By Kasea</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/bcSwipe.js"></script>
   <style>
   body {
-      position: relative; 
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size:20px;
   }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  #HOME {padding-top:80px;height:auto;color: #000; background-color: #efefef;}
+  #section2 {padding-top:50px;height:500px;color: #000; background-color: #ffffff;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #dddddd;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #bbbbbb;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #dddddd;}
+  #myModal {color:#000000}
+  .jumbotron {background-color: #ffffff;}
+  .col-sm-4 {background-color: #aaaaaa;}
+  #jumbo {text-align:center;color:#000000;}
+  .panel{color:#000000}
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -28,12 +37,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Hair By Kasea</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#HOME">HOME</a></li>
           <li><a href="#section2">Section 2</a></li>
           <li><a href="#section3">Section 3</a></li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
@@ -43,20 +52,29 @@
             </ul>
           </li>
         </ul>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
       </div>
     </div>
   </div>
 </nav>    
 
-<div id="section1" class="container-fluid">
-  <h1>Section 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+<div id="HOME" class="container-fluid">
+	<div class="jumbotron" id="jumbo">
+		<h1>Bootstrap Tutorial</h1> 
+		<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+		responsive, mobile-first projects on the web.</p> 
+	</div>
 </div>
-<div id="section2" class="container-fluid">
+<div id="section2" class="container">
   <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <div class="row">
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+</div>
 </div>
 <div id="section3" class="container-fluid">
   <h1>Section 3</h1>
@@ -69,10 +87,64 @@
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
 <div id="section42" class="container-fluid">
-  <h1>Section 4 Submenu 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
+<div class="panel panel-default">
+    <div class="panel-heading">Panel Heading</div>
+    <div class="panel-body"><h2>Large Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button></div>
+    <div class="panel-footer">Panel Footer</div>
+  </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script>
+$(document).ready(function(){
+	$('.nav a').on('click', function(e){
+		if(!$(this).hasClass( "dropdown-toggle" ) && $('button').css('display') == 'block'){
+			$('.navbar-toggle').click();
+		}
+		
+		// prevent default anchor click behavior
+	   e.preventDefault();
+
+	   // store hash
+	   var hash = this.hash;
+
+	   // animate
+	   var top = ($(hash).offset() || { "top": NaN }).top;
+		if (!isNaN(top)) {
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 900, function(){
+
+				   // when done, add hash to url
+				   // (default click behaviour)
+					window.location.hash = hash;
+			});
+		}
+	//$('.carousel').bcSwipe({ threshold: 50 });
+	});
+});
+</script>
 
 </body>
 </html>
